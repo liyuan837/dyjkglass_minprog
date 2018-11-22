@@ -4,10 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    imgUrls: [
+      'http://www.dyjkglass.com/uploadpic/banner/e38058d9-4e21-47cd-b7e9-c99d38faf028.jpg',
+      'http://www.dyjkglass.com/uploadpic/banner/584984c7-e731-4671-8471-7e5e9dd2f222.jpg',
+      'http://www.dyjkglass.com/uploadpic/banner/d1f79710-6277-4eac-89f2-5f0ebf8e3222.jpg',
+      'http://www.dyjkglass.com/uploadpic/banner/b939483b-8640-4a2f-8edf-9a5c9b1c84aa.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
   //事件处理函数
   bindViewTap: function() {
