@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="jh_layout">
+  <view class='jh_search-box'>
+    <image src='http://www.dyjkglass.com/jianghong/img/logo.png'></image>
+    <text class="fa fa-search"></text>
+    <input type='text' placeholder='请输入关键字'/>
+  </view>
+</view>

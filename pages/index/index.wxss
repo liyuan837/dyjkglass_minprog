@@ -1,0 +1,4 @@
+/**index.wxss**/
+text{
+  color:red
+}

@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#32AEE1",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle":"white"
+  }
+}
