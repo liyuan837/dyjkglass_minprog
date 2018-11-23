@@ -1,0 +1,26 @@
+<template name='tabBar'>
+  <view class='jh-tab-box'>
+    <view class='jh-tab' style="{{'background:' + tabBar.backgroundColor}}">
+      <block wx:for="{{tabBar.list}}" wx:key="pagePath">    
+        <view class="tab-item" style="{{item.active ? 'color:' + tabBar.selectedColor : 'color:' + tabBar.color}}">
+          <navigator url="{{item.pagePath}}" open-type="redirect">
+            <i class="'fa ' + {{item.iconClass}}"></i>
+            <view class='item-name'>{{item.text}}</view> 
+          </navigator>    
+        </view>
+      </block>
+      <!-- <view class='tab-item' style='color:#2293C4;'>
+        <i class='item-icon fa fa-home'></i>
+        <view class='item-name'>首页</view>
+      </view> 
+      <view class='tab-item' style='color:#666666;'>
+        <i class='item-icon fa fa-shopping-cart'></i>
+        <view class='item-name'>购物车</view>
+      </view> 
+      <view class='tab-item' style='color:#666666;'>
+        <i class='item-icon fa fa-user'></i>
+        <view class='item-name'>我的</view>
+      </view> -->
+    </view>
+  </view>
+</template>

@@ -1,3 +1,4 @@
+@import "../../template/templateList.wxss";
 .jh-search-box{
   display: flex;
   flex-direction: row;

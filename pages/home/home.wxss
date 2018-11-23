@@ -1,0 +1,36 @@
+@import "../../template/templateList.wxss";
+
+.jh-top-box{
+  width: 100%;
+  height: 360rpx;
+  background:#52A5FA;
+  position: relative;
+
+}
+.jh-top-box > i{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  color: white;
+}
+.jh-top-box > .user-info{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 40rpx;
+  margin: auto auto;
+  text-align: center;
+}
+
+.user-info > image{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-info > text{
+  color: white;
+
+}

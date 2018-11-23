@@ -1,0 +1,27 @@
+.jh-tab-box{
+  width: 100%;
+  height: 120rpx;
+  border-top: solid 1px #eeeeee;
+  position: fixed;
+  bottom:0;
+  left:0;
+}
+.jh-tab{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.jh-tab .tab-item{
+  text-align: center;
+  width: 120rpx;
+}
+
+.jh-tab .tab-item i{
+  font-size: 44rpx;
+}
+.jh-tab .tab-item .item-name{
+  font-size: 30rpx;
+}

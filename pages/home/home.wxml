@@ -1,0 +1,42 @@
+<view class="jh-layout">
+  <view class='jh-top-box'>
+    <i class='fa fa-bell-o'></i>
+    <view class='user-info'>
+      <image mode='widthFix' src='http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLorJOjwS3qb9tftzNuTMm9mBvwZZNv6ia9MmQFGdeJFNvGKtcV2icljrc2AAPKfcV2IsdicyHJVibHAQ/132'></image>
+      <text>演得太逼真</text>
+    </view>
+  </view>
+
+  <view class='jh-order-box'>
+    <view class='order-title'>
+      <text class='left-title'>我的订单</text>
+      <text class='right-link'>查看全部<i class='fa fa-angle-right'></i></text>
+    </view>
+    <view class='order-category'>
+      <view>
+        <i class='fa fa-sign-out'></i>
+        <text>1</text>
+        <view>待付款</view>
+      </view>
+      <view>
+        <i class='fa fa fa-suitcase'></i>
+        <text>1</text>
+        <view>待发货</view>
+      </view>
+      <view>
+        <i class='fa fa fa-truck'></i>
+        <text>1</text>
+        <view>待收货</view>
+      </view>
+      <view>
+        <i class='fa fa fa-paw'></i>
+        <text>1</text>
+        <view>交易完成</view>
+      </view>
+    </view>
+  </view>
+
+  <import src="../../template/templateList.wxml"/>
+  <template is='tabBar' data="{{tabBar}}">
+  </template>
+</view>

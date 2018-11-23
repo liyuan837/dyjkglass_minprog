@@ -12,7 +12,7 @@ Page({
     ],
     indicatorDots: true,
     autoplay: true,
-    interval: 5000,
+    interval: 3000,
     duration: 1000
   },
   //事件处理函数
@@ -22,6 +22,8 @@ Page({
     })
   },
   onLoad: function () {
+    app.editTabBar();
+    
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

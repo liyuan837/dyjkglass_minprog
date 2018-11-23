@@ -1,0 +1,6 @@
+<view class="jh-layout">
+  <text>cart</text>
+  <import src="../../template/templateList.wxml"/>
+  <template is='tabBar' data="{{tabBar}}">
+  </template>
+</view>

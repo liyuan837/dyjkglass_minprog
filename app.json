@@ -1,12 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/cart/cart",
+    "pages/home/home"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#32AEE1",
-    "navigationBarTitleText": "商城",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   }
 }

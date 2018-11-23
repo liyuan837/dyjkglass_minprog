@@ -32,8 +32,49 @@ App({
         }
       }
     })
+  }, 
+  editTabBar: function () {
+    var curPageArr = getCurrentPages();
+    var curPage = curPageArr[curPageArr.length - 1];
+    var pagePath = curPage.route;
+    if (pagePath.indexOf('/') != 0) {
+      pagePath = '/' + pagePath;
+    }
+    var tabBar = this.globalData.tabBar;
+    for (var i = 0; i < tabBar.list.length; i++) {
+      tabBar.list[i].active = false;
+      if (tabBar.list[i].pagePath == pagePath) {
+        tabBar.list[i].active = true;
+      }
+    }
+    curPage.setData({
+      tabBar: tabBar
+    });
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    tabBar:{
+      "color":"#666666",
+      "selectedColor":"#2293C4",
+      "backgroundColor":"#ffffff",
+      "list":[
+        {
+          "pagePath":"/pages/index/index",
+          "text":"首页",
+          "iconClass":"fa-home",
+          "active":true
+        }, {
+          "pagePath": "/pages/cart/cart",
+          "text": "购物车",
+          "iconClass": "fa-shopping-cart",
+          "active": false
+        }, {
+          "pagePath": "/pages/home/home",
+          "text": "我的",
+          "iconClass": "fa-user",
+          "active": false
+        }
+      ]
+    }
   }
 })
